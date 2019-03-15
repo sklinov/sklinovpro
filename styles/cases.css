@@ -1,0 +1,35 @@
+.page {
+	overflow: hidden;
+}
+.case__image {
+
+}
+
+.screen__extrabg {
+	position: absolute;
+	transform: rotate3d(0.5,0.5,-0.5,60deg);
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+}
+
+.ontop {
+	z-index: 2;
+}
+
+.case__title {
+	align-self: flex-start;
+	position: absolute;
+	top: 500px;
+}
+.case__description {
+	align-self: flex-start;
+	position: absolute;
+	top: 600px;
+	width: 30%;
+}
+.case__auximage {
+	position: absolute;
+	align-self: flex-start;
+	top: 700px;
+}

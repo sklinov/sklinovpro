@@ -1,0 +1,77 @@
+.button {
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	outline-color: var(--blue);
+}
+.button-transparent {
+	border-color: var(--blue);
+	border-style: solid;
+	border-width: 1px;
+	width: 205px;
+	height: 45px;
+	background-color: transparent;
+	color: var(--blue);
+}
+.button-transparent:hover {
+	background-color: var(--ltblue);
+	color: var(--white);
+}
+.button-transparent:active {
+
+}
+.button-red {
+	border-style: none;
+	border-width: 0px;
+	width: 270px;
+	height: 60px;
+	background-color: var(--red);
+	color: var(--white);
+}
+.button-red:hover {
+	background-color: white;
+	color: var(--red);
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--red);
+}
+.button-red:active {
+	
+}
+
+.button-white {
+	border-style: none;
+	border-width: 0px;
+	width: 270px;
+	height: 60px;
+	background-color: white;
+	color: var(--red);
+}
+.button-white:hover {
+	color: var(--red);
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--red);
+	box-shadow: 0px 0px 10px #757575;
+}
+
+.button-white:active {
+	box-shadow: none;
+}
+
+.button-round {
+	display: none;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+}
+@media (max-width: 455px) {
+	.button-round {
+		display: inline-flex;
+	}
+	.button-header {
+		display: none;
+	}
+}

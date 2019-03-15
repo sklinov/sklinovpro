@@ -1,11 +1,70 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Sergei Klinov</title>
-</head>
-<body>
-	<h1>
-	Sergei Klinov
-	</h1>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="../diploma/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../diploma/images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    
+    <title>Sergei Klinov</title>
+  </head>
+  <body class="page">
+    <header class="screen screen-white">
+		<div class="screen__container screen__container-row screen__container-header">
+			<menu class="menu" id="menu">
+				<li class="menu__item"><a class="menu__item link" href="#services">Services</a></li>
+				<li class="menu__item"><a class="menu__item link" href="#tools">Tools</a></li>
+				<li class="menu__item"><a class="menu__item link" href="cases.html">Cases</a></li>
+			</menu>
+			<i class="menu__burger material-icons material-icons-gradient" id="menu__burger">
+				<span class="menu__burger-burger" id="menu__burger-burger">menu</span>
+				<span class="menu__burger-clear" id="menu__burger-clear">clear</span>
+			</i>
+			<div class="contact">+7 (912) 263-00-44</div>
+			<button class="button button-transparent button-header" id="order-call">Get in touch</button>
+			<button class="button button-transparent button-round" id="order-call-small"><i class="material-icons material-icons-gradient material-icons-button-round">call</i></button>
+		</div>
+	</header>
+	<div class="screen screen-white screen-bg" id="firstscreen">
+		<div class="screen__container screen__container-row">
+			<div class="title-container">
+				<h1 class="h1">Sergei Klinov</h1>
+				<div class="h1__subtitle">Fullstack developer</div>
+				<button class="button button-transparent" id="know-more">Learn more</button>
+			</div>
+			<img class="portrait" src="images/portrait.png" alt="Potrait">
+		</div>
+	<div class="screen screen-blue" id="services">
+		<div class="screen__container screen__container-main">
+			<h2 class="h2 h2-white">Services</h2>
+			<div class="services">
+				<div class="services__item">
+					<img class="services__img" src="images/frontend.svg" alt="Верстка лендинг-страниц и сайтов любой сложности">
+					<div class="services__caption">Front-end development</div>
+				</div>
+				<div class="services__item">
+					<img class="services__img" src="images/backend.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
+					<div class="services__caption">Back-end development</div>
+				</div>
+				<div class="services__item">
+					<img class="services__img" src="images/design.svg" alt="Frontend-разработка и программирование">
+					<div class="services__caption">Design</div>
+				</div>
+				<div class="services__item">
+					<img class="services__img" src="images/ads.svg" alt="Исправление и доработка существующей вёрстки">
+					<div class="services__caption">Ads</div>
+				</div>
+			</div>
+			<button class="button button-transparent" id="know-price">Ask for prices</button>
+		</div>
+	</div>
+	<div class="screen screen-white" id="tools">
+		<div class="screen__container screen__container-main">
+			<h2 class="h2">Tools</h2>
+		</div>
+	</div>
+
+  </body>
 </html>
