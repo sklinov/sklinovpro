@@ -1,6 +1,5 @@
 <?php
 include "./controller/cases.php";
-var_dump($_SERVER['DOCUMENT_ROOT']);
 echo '
 <div class="screen screen-gradient" id="cases">
 <div class="screen__container screen__container-main" id="main-container">
