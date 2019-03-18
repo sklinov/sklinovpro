@@ -4,8 +4,8 @@
  //$options['host'] = "94.154.12.56";
  $options['host'] = "localhost"; 
  $options['port'] = 5984;
- //$options['user'] = "web";
- //$options['pass'] = "7NhLRjhxRVepVMW";
+ $options['user'] = "admin";
+ $options['pass'] = "nonbreakablespace";
 
  $couch = new CouchSimple($options); // See if we can make a connection
  $resp = $couch->send("GET", "/"); 
