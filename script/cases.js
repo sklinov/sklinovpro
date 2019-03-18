@@ -38,7 +38,7 @@ function initialposition(flag) {
 	var ch = wh-hh;
 	//console.log(hh+' '+wh+' '+ch);
 	$('#cases').css('height', ch+'px');
-	var img = "<img src='./images/beautytime1.png' id='screen-extra-bg'>";
+	var img = "<img src="+imgurl+" id='screen-extra-bg'>";
 	$('#cases').prepend(img);
 	$('#screen-extra-bg').addClass('screen__extrabg');
 	$('#screen-extra-bg').siblings().children().addClass('ontop');

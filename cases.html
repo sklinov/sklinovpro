@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/cases.css">
     <script src="lib/jquery-3.3.1.min.js"></script>
     <script src="lib/anime.min.js"></script>
-    <script src="script/cases.js"></script>
+    
     
     <title>Sergei Klinov - Cases</title>
   </head>
@@ -31,18 +31,11 @@
 		</div>
 	</header>
 
-	<div class="screen screen-gradient" id="cases">
-		<div class="screen__container screen__container-main" id="main-container">
-			<h2 class="h2">Cases</h2>
-			<div class="case__image" id="main-image"></div>
-			<h3 class="case__title" id="case-title">Beauty Time</h3>
-			<p class="case__description" id="case-description">
-				Design for cosmetics brand webstore. Subtle design, high usability.
-			</p>
-			<img class="case__auximage" src="images/beautytime2.jpg" id="case-auximage">
+<?php 
+include "templates/cases-template.php";
+?>
 
-		</div>
-	</div>
+<script src="script/cases.js"></script>
 
   </body>
 </html>
