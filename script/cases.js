@@ -77,6 +77,6 @@ function applyCase(index) {
 	var c = JSON.parse(cases[index]);
 	$("#case-title").text(c.data.project_name);
 	$("#case-description").text(c.data.description);
-	imgurl = ".."+c.images.main_image_url;
+	imgurl = c.images.main_image_url;
 	console.log(imgurl);
 }
