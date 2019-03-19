@@ -10,14 +10,15 @@
 	transform: rotate3d(0.5,0.5,-0.5,60deg);
 	z-index: 1;
 	top: 0px;
-	left: 0px;
+	left: 50%;
+	filter: drop-shadow(0px, 20px, 20px, var(--black));
 }
 
 .ontop {
 	z-index: 2;
 }
 
-.case__title {
+.case__subtitle {
 	align-self: flex-start;
 	position: absolute;
 	top: 500px;
