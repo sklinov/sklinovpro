@@ -5,6 +5,13 @@
 	cursor: pointer;
 	outline-color: var(--blue);
 }
+
+.button-right-bottom {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+
 .button-transparent {
 	border-color: var(--blue);
 	border-style: solid;

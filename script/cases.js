@@ -1,24 +1,21 @@
 $(function () {
+	localpath = "/sklinovpro";
 	var flag = true;
 	var imgurl;	
 	var caseindex=0;
-	var caseslength=cases.length;
+	var lastindex=cases.length-1;
 
 	applyCase(caseindex);
 
 	initialposition(flag);
-	var flag = false;
+	flag = false;
 	$(window).on('wheel', function(event) {
-		//console.log(event);
+		
 		var scrolly = event.originalEvent.deltaY;
 		var position=$('#screen-extra-bg').position();
-		//console.log("scrolly:"+scrolly);
-		//console.log(position);
 		var delta = scrolly/5;
-		//console.log("delta:"+delta);
 		var newtop = position.top + delta;
 		var newleft = position.left + delta;
-		//console.log('newtop:'+newtop+'  '+'newleft:'+newleft);
 		
 		var rect=document.getElementById('screen-extra-bg').getBoundingClientRect();
 
@@ -29,7 +26,16 @@ $(function () {
 		position=$('#screen-extra-bg').position();
 		//console.log(position);
 	});
-
+	$("#next-case").click(function(){
+		if(caseindex<lastindex)	{
+			caseindex++;
+		}
+		else {
+			caseindex=0;
+		}
+		applyCase(caseindex);
+		initialposition(true);
+	})
 });
 
 function initialposition(flag) {
@@ -39,13 +45,15 @@ function initialposition(flag) {
 	var wh = $(window).height();
 	var ch = wh-hh;
 	//console.log(hh+' '+wh+' '+ch);
+	
 	$('#cases').css('height', ch+'px');
 	var img = '<img src="" id="screen-extra-bg">';
-	$('#cases').prepend(img);
+	$('#screen-image').html(img);
 	$('#screen-extra-bg').attr("src",imgurl);
 	$('#screen-extra-bg').addClass('screen__extrabg');
-	$('#screen-extra-bg').siblings().children().addClass('ontop');
+	$('#screen-extra-bg').parent().siblings().children().addClass('ontop');
 	$('#menu').addClass('ontop');
+	
 	//console.log($('#screen-extra-bg').height());
 
 	var rect=document.getElementById('screen-extra-bg').getBoundingClientRect();
@@ -76,7 +84,21 @@ function getCases(i) {
 function applyCase(index) {
 	var c = JSON.parse(cases[index]);
 	$("#case-title").text(c.data.project_name);
+	$("#case-title").css('color',c.style.hcolor);
 	$("#case-description").text(c.data.description);
-	imgurl = c.images.main_image_url;
-	console.log(imgurl);
+	imgurl = adjustURL(c.images.main_image_url);
+	$("#case-subtitle").text(c.data.subtitle);
+	var bgstyle='linear-gradient(180deg, var(--white),'+c.style.bgcolor+')';
+	$("#cases").css('background', bgstyle);
+
+}
+
+function adjustURL(url) {
+	var location = window.location.href;
+	if(location.includes("localhost"))
+	{
+		url=localpath+url;
+	}
+	
+	return url;
 }
