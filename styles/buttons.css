@@ -12,6 +12,12 @@
 	bottom: 50px;
 }
 
+.button-left-bottom {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+
 .button-transparent {
 	border-color: var(--blue);
 	border-style: solid;
@@ -28,38 +34,18 @@
 .button-transparent:active {
 
 }
-.button-red {
-	border-style: none;
-	border-width: 0px;
-	width: 270px;
-	height: 60px;
-	background-color: var(--red);
-	color: var(--white);
-}
-.button-red:hover {
-	background-color: white;
-	color: var(--red);
-	border-width: 1px;
-	border-style: solid;
-	border-color: var(--red);
-}
-.button-red:active {
-	
-}
 
 .button-white {
-	border-style: none;
-	border-width: 0px;
+	border-style: solid;
+	border-width: 1px;
 	width: 270px;
 	height: 60px;
-	background-color: white;
-	color: var(--red);
+	background-color: transparent;
+	color: var(--white);
 }
 .button-white:hover {
-	color: var(--red);
-	border-width: 1px;
-	border-style: solid;
-	border-color: var(--red);
+	background-color: var(--white);
+	color: var(--blue);
 	box-shadow: 0px 0px 10px #757575;
 }
 

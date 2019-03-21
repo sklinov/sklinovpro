@@ -1,0 +1,11 @@
+.tool__imgcontainer {
+    margin: 20px 20px 0px 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+.tool__img {
+    max-width: 100px;
+    max-height: 100px;
+    align-self: center;
+}

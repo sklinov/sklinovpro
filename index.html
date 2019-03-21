@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <script src="lib/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/tools.css">
     
     <title>Sergei Klinov</title>
   </head>
@@ -57,14 +58,22 @@
 					<div class="services__caption">Ads</div>
 				</div>
 			</div>
-			<button class="button button-transparent" id="know-price">Ask for prices</button>
+			<button class="button button-white" id="know-price">Hire</button>
 		</div>
 	</div>
+	<?php include "controller/tools.php";?>
+	
 	<div class="screen screen-white" id="tools">
 		<div class="screen__container screen__container-main">
 			<h2 class="h2">Tools</h2>
+			<div class="card-deck" id="tools-deck">
+				
+			</div>
 		</div>
 	</div>
-
+	<script src="lib/jquery-3.3.1.min.js"></script>
+	<script src="lib/popper.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<script src="script/tools.js"></script>
   </body>
 </html>

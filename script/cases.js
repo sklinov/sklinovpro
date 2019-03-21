@@ -9,6 +9,7 @@ $(function () {
 
 	initialposition(flag);
 	flag = false;
+
 	$(window).on('wheel', function(event) {
 		
 		var scrolly = event.originalEvent.deltaY;
@@ -35,7 +36,17 @@ $(function () {
 		}
 		applyCase(caseindex);
 		initialposition(true);
-	})
+	});
+	$("#prev-case").click(function(){
+		if(caseindex>0)	{
+			caseindex--;
+		}
+		else {
+			caseindex=lastindex;
+		}
+		applyCase(caseindex);
+		initialposition(true);
+	});
 });
 
 function initialposition(flag) {
@@ -73,8 +84,6 @@ function initialposition(flag) {
 	$('#case-auximage').css('top',wh/2+200+'px');
 	flag=false;
 	}
-	//console.log(flag);
-	//return flag;
 }
 
 function getCases(i) {

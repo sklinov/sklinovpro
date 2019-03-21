@@ -211,7 +211,7 @@
 .link:hover {
 	cursor: pointer;
 	text-decoration: underline;
-	color: var(--pink);
+	color: var(--ltblue);
 }
 
 .contact {
