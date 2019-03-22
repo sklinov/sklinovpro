@@ -10,7 +10,7 @@ $(function() {
 });
 
 function createToolTemplate() {
-    var tooltemplate=`<div class="card text-center">
+    var tooltemplate=`<div class="card text-center mx-auto">
     <a href="{{url}}"><div class="card-img-top tool__imgcontainer"><img src="{{logo}}" class="tool__img"></div></a>
         <div class="card-body">
         <p class="card-text"><a href="{{url}}">{{name}}</a></p>

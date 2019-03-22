@@ -1,6 +1,7 @@
 @import url("fonts.css");
 @import url("buttons.css");
 @import url("material-icons.css");
+@import url("social.css");
 
 :root {
 	--black: #212121;
@@ -47,7 +48,7 @@
 		background: linear-gradient(180deg, var(--white),var(--grey));
 	}
 	.screen-dark {
-		background-color: var(--violet);
+		background-color: var(--black);
 	}
 	.screen-bg {
 	background-image: url("../images/beautytime1.png");
@@ -88,7 +89,7 @@
 	padding-bottom: 100px;
 }
 .screen__container-white {
-	color: white;
+	color: var(--white);
 	align-items: center;
 	justify-content: center;
 	padding-top: 30px;
@@ -103,8 +104,6 @@
 .screen__container-footer {
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 16px;
-	margin-bottom: 16px;
 	flex-wrap: wrap;
 }
 
@@ -201,8 +200,10 @@
 .menu-footer {
 	display: flex;
 	flex-direction: column;
-	color: var(--subh);
+	line-height: 40px;
+	c
 }
+
 
 .link {
 	text-decoration: none;
