@@ -29,6 +29,12 @@
 	background-size: contain;
  }
 
+ .social__icon-ghblack {
+	background: url("../images/social/github-black.svg");
+	background-repeat: no-repeat;
+   background-size: contain;
+}
+
 .social__icon-li {
 	 background: url("../images/social/linkedin.svg");
 	 background-repeat: no-repeat;

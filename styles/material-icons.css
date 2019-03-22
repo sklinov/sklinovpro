@@ -40,5 +40,5 @@
     -webkit-text-fill-color: transparent;
   }
   .material-icons-white {
-    color: white;
+    color: var(--white);
   }
