@@ -9,24 +9,23 @@
 	width: 35px;
 	height: 30px;
 	cursor: pointer;
+	
 }
 
 .social__icon-vk {
-	background: url("../images/social.png");
-	background-position: 0px 0px;
+	background: url("../images/social/vk.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.social__icon-fb {
- 	background: url("../images/social.png");
- 	background-position: -35px 0px; 	
-}
+.social__icon-gh {
+	 background: url("../images/social/github.svg");
+	 background-repeat: no-repeat;
+	background-size: contain;
+ }
 
-.social__icon-tw {
- 	background: url("../images/social.png");
- 	background-position: 0px -30px;
-}
-
-.social__icon-ig {
-	background: url("../images/social.png");
- 	background-position: -35px -30px; 	
+.social__icon-li {
+	 background: url("../images/social/linkedin.svg");
+	 background-repeat: no-repeat;
+	background-size: contain;
 }
