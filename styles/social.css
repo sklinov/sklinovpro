@@ -17,6 +17,11 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+.social__icon-tg {
+	background: url("../images/social/telegram.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 
 .social__icon-gh {
 	 background: url("../images/social/github.svg");
