@@ -7,8 +7,8 @@ $body = "You have received a message from ";
 $customer_body = ", thank you for contacting me. I will respond your inquiery as soon as possible. This is an automated message but you can reply to this e-mail if you have further questions. Best wishes, Sergei Klinov";
 
 
-$headers = 'From: me@sklinov.pro' . "\r\n" .
-'Reply-To: me@sklinov.pro' . "\r\n" .
+$headers = 'From: Sergei Klinov <me@sklinov.pro>' . "\r\n" .
+'Reply-To: Sergei Klinov <me@sklinov.pro>' . "\r\n" .
 'MIME-Version: 1.0'. "\r\n" .
 'Content-type: text/html; charset=iso-8859-1' ."\r\n" . 
 'X-Mailer: PHP/' . phpversion();
