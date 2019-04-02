@@ -35,7 +35,7 @@ function show_modal(show_mail,label) {
         formData.email=$("#mail").val();
         $.ajax({
             type: 'post',
-            url: 'script/mail.php',
+            url:  'script/mail.php',
             data: formData,
             success: function(results) {
                 $('.modal__form').hide();
