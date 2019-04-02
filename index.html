@@ -122,10 +122,28 @@
 				© made from scratch by Sergei Klinov, 2019
 			</div>
 		</div>
-
+		<div class="modal" id="modal-call">
+			<div class="modal-container">
+				<i class="material-icons material-icons-white modal__clear" id="modal__clear">
+					clear
+				</i>
+				<h3 class="h3 h3-modal">Get it touch</h3>
+				<form class="modal__form">
+					<label for="name" class="modal__label">My name is:</label>
+					<input type="text" id="name" class="modal__field" placeholder="My name" required="required">
+					<label for="phone" class="modal__label">Phone:</label>
+					<input type="tel" id="phone" class="modal__field" required="required">
+					<label for="mail" class="modal__label" id="mail-label">E-mail:</label>
+					<input type="email" id="mail" class="modal__field" placeholder="E-mail address">
+					<input type="button" value="Get in touch" class="button button-white" id="order-call-button">
+				</form>
+				</div>
+		</div>
 	<script src="lib/jquery-3.3.1.min.js"></script>
+	<script src="lib/jquery.maskedinput.js"></script>
 	<script src="lib/popper.min.js"></script>
 	<script src="lib/bootstrap.min.js"></script>
+	<script src="script/index.js"></script>
 	<script src="script/tools.js"></script>
   </body>
 </html>

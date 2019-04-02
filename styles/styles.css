@@ -2,6 +2,7 @@
 @import url("buttons.css");
 @import url("material-icons.css");
 @import url("social.css");
+@import url("modal.css");
 
 :root {
 	--black: #212121;
