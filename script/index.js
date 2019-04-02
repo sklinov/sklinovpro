@@ -40,7 +40,7 @@ function show_modal(show_mail,label) {
             success: function(results) {
                 $('.modal__form').hide();
                 $('.h3.h3-modal').html(results);
-                //$('#modal-call').delay(3000).fadeOut(200);
+                $('#modal-call').delay(3000).fadeOut(200);
                 
             },
             error: function() {
