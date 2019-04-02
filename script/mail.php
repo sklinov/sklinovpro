@@ -1,6 +1,6 @@
 <?php
 
-$me = "me@sklinov.pro";
+$me = "Sergei Klinov <me@sklinov.pro>";
 $subj = "You have received a message";
 $customer_subj = "Your message received";
 $body = "You have received a message from ";
