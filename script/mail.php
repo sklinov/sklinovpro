@@ -12,6 +12,7 @@ $headers = 'From: me@sklinov.pro' . "\r\n" .
 'MIME-Version: 1.0'. "\r\n" .
 'Content-type: text/html; charset=iso-8859-1' ."\r\n" . 
 'X-Mailer: PHP/' . phpversion();
+$additional_headers = '-fme@sklinov.pro';
 
 $contact=[];
 
@@ -22,8 +23,8 @@ $contact["email"] = isset($_POST['email']) ? $_POST['email'] : NULL;
 $body = $body.$contact["name"]." Please respond him as soon as possible to ".$contact["email"]." or call ".$contact["phone"];
 $customer_body = $contact["name"].$customer_body;
 
-mail($me,$subj,$body,$headers);
-mail($contact["email"],$customer_subj, $customer_body, $customer_headers);
+mail($me,$subj,$body,$headers,$additional_headers);
+mail($contact["email"],$customer_subj, $customer_body, $customer_headers, $additional_headers);
 
 //echo $contact["name"].$contact["phone"].$contact["email"];
 echo 'Thank you '.$contact["name"].'!<br>
