@@ -5,6 +5,12 @@ $subj = "You have received a message";
 $customer_subj = "Your message received";
 $body = "You have received a message from ";
 
+$contact=[];
+
+$contact["name"] = isset($_POST['name']) ? $_POST['name'] : NULL;
+$contact["phone"] = isset($_POST['phone']) ? $_POST['phone'] : NULL;
+$contact["email"] = isset($_POST['email']) ? $_POST['email'] : NULL;
+
 $customer_body = '
 <html>
     <head>
@@ -38,10 +44,10 @@ $customer_body = '
     </head>
 <body>
     <div class="msg__container">
-        <div class="msg__header">'.$contact["name"].'</div>    
+        <div class="msg__header">'.$contact["name"].',</div>    
         <div class="msg__text">
             <p>
-                , thank you for contacting me. I will respond your inquiery as soon as possible. 
+                thank you for contacting me. I will respond your inquiery as soon as possible. 
             </p>
             <p>
                 This is an automated message but you can reply to this e-mail if you have further questions. 
@@ -53,7 +59,6 @@ $customer_body = '
 </html>
 ';
 
-
 $headers = 'From: Sergei Klinov <me@sklinov.pro>' . "\r\n" .
 'Reply-To: Sergei Klinov <me@sklinov.pro>' . "\r\n" .
 'MIME-Version: 1.0'. "\r\n" .
@@ -61,11 +66,6 @@ $headers = 'From: Sergei Klinov <me@sklinov.pro>' . "\r\n" .
 'X-Mailer: PHP/' . phpversion();
 $additional_headers = '-fme@sklinov.pro';
 
-$contact=[];
-
-$contact["name"] = isset($_POST['name']) ? $_POST['name'] : NULL;
-$contact["phone"] = isset($_POST['phone']) ? $_POST['phone'] : NULL;
-$contact["email"] = isset($_POST['email']) ? $_POST['email'] : NULL;
 
 $body = $body.$contact["name"]." Please respond him as soon as possible to ".$contact["email"]." or call ".$contact["phone"];
 //$customer_body = $contact["name"].$customer_body;
