@@ -32,8 +32,8 @@
 				<span class="menu__burger-clear" id="menu__burger-clear">clear</span>
 			</i>
 			<div class="contact">+7 (912) 263-00-44</div>
-			<button class="button button-transparent button-header" id="order-call">Get in touch</button>
-			<button class="button button-transparent button-round" id="order-call-small"><i class="material-icons material-icons-gradient material-icons-button-round">call</i></button>
+			<button class="button button-transparent button-header call" id="order-call">Get in touch</button>
+			<button class="button button-transparent button-round call" id="order-call-small"><i class="material-icons material-icons-gradient material-icons-button-round">call</i></button>
 		</div>
 	</header>
 <div class="screen screen-gradient" id="cases">
@@ -52,10 +52,39 @@
 	</div>
 </div>
 
+<div class="modal" id="modal-call">
+		<div class="modal-container">
+			<i class="material-icons material-icons-white modal__clear" id="modal__clear">
+				clear
+			</i>
+			<h3 class="h3 h3-modal" id="modal-call-h3">Get it touch</h3>
+			<form class="modal__form">
+				<label for="name" class="modal__label">My name is:</label>
+				<input type="text" id="name" class="modal__field" placeholder="My name" required="required">
+				<label for="phone" class="modal__label">Phone:</label>
+				<input type="tel" id="phone" class="modal__field" required="required">
+				<label for="mail" class="modal__label" id="mail-label">E-mail:</label>
+				<input type="email" id="mail" class="modal__field" placeholder="E-mail address">
+				<input type="button" value="Get in touch" class="button button-white" id="order-call-button">
+			</form>
+			</div>
+	</div>
+
+	<div class="modal" id="modal-already">
+			<div class="modal-container">
+					<i class="material-icons material-icons-white modal__clear" id="modal__clear">
+						clear
+					</i>
+					<h3 class="h3 h3-modal">Your message already received. Thank you!</h3>
+				
+				</div>
+		</div>
+
 <?php 
 include "controller/cases.php";
 ?>
 
 <script src="script/cases.js"></script>
+<script src="script/index.js"></script>
   </body>
 </html>
