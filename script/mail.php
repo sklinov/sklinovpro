@@ -71,7 +71,7 @@ $body = $body.$contact["name"]." Please respond him as soon as possible to ".$co
 //$customer_body = $contact["name"].$customer_body;
 
 mail($me,$subj,$body,$headers,$additional_headers);
-mail($contact["email"],$customer_subj, $customer_body, $customer_headers, $additional_headers);
+mail($contact["email"],$customer_subj, $customer_body, $headers, $additional_headers);
 
 //echo $contact["name"].$contact["phone"].$contact["email"];
 echo 'Thank you '.$contact["name"].'!<br>
