@@ -12,6 +12,7 @@ $contact["phone"] = isset($_POST['phone']) ? $_POST['phone'] : NULL;
 $contact["email"] = isset($_POST['email']) ? $_POST['email'] : NULL;
 
 $customer_body = '
+<!doctype html>
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
