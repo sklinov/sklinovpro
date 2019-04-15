@@ -49,42 +49,6 @@ function show_modal(modal) {
 	}
 	else if (modal=="#modal-already")
 	{
-
+		$(modal).delay(3000).fadeOut(200);
 	}
 } 
-
-// function show_modal(element) {
-		
-	
-// 		$('.h3.h3-modal').html("Hello, ");
-// 		$('.modal__form').css("height","70%");
-// 		$('#mail, #mail-label').show();
-
-// 		var completed=false;
-// 		$('#phone').mask("+99(999)999-99-99",{placeholder:" "});
-// 		$(element).toggle();
-// 		$('#modal__clear').click(function() {
-// 			$(#modal-call).hide();//show_modal();
-// 		});
-		
-// 		$('#order-call-button').click(function() {
-// 			var formData = {};
-// 			formData.name=$("#name").val();
-// 			formData.phone=$("#phone").val();
-// 			formData.email=$("#mail").val();
-// 			$.ajax({
-// 				type: 'post',
-// 				url:  'script/mail.php',
-// 				data: formData,
-// 				success: function(results) {
-// 					$('.modal__form').hide();
-// 					$('.h3.h3-modal').html(results);
-// 					$('#modal-call').delay(3000).fadeOut(200);	
-// 				},
-// 				error: function() {
-// 					console.log('ajax error');
-// 				}
-// 			});
-				
-// 		});
-// 	}

@@ -2,7 +2,7 @@ $(function() {
     localpath = "/sklinovpro";
     lastindex_tools=tools.length-1;
     template=createToolTemplate();
-    for(var i=0;i<=lastindex_tools;i++)
+    for(var i = 0;i <= lastindex_tools;i++)
     {
         //console.log(i);
         getTool(i);
