@@ -41,8 +41,8 @@
 					<a class="social__icon social__icon-ghblack" href="https://github.com/sklinov"></a>
 					<a class="social__icon social__icon-li" href="https://linkedin.com/in/sergei-klinov-1a7b4a182" ></a>
 			</div>
-			<button class="button button-transparent button-header" id="order-call">Get in touch</button>
-			<button class="button button-transparent button-round" id="order-call-small"><i class="material-icons material-icons-gradient material-icons-button-round">call</i></button>
+			<button class="button button-transparent button-header call" id="order-call">Get in touch</button>
+			<button class="button button-transparent button-round call" id="order-call-small"><i class="material-icons material-icons-gradient material-icons-button-round">call</i></button>
 		</div>
 	</header>
 	<div class="screen screen-white" id="firstscreen">
@@ -50,7 +50,7 @@
 			<div class="title-container">
 				<h1 class="h1">Sergei Klinov</h1>
 				<div class="h1__subtitle">Fullstack developer</div>
-				<button class="button button-transparent" id="know-more">Learn more</button>
+				<button class="button button-transparent call" id="know-more">Learn more</button>
 			</div>
 			<img class="portrait" src="images/portrait.png" alt="Potrait">
 		</div>
@@ -75,7 +75,7 @@
 					<div class="services__caption">Ads</div>
 				</div>
 			</div>
-			<button class="button button-white" id="know-price">Hire</button>
+			<button class="button button-white call" id="know-price">Hire</button>
 		</div>
 	</div>
 	<?php include "controller/tools.php";?>
@@ -107,7 +107,7 @@
 					</div>
 				</div>
 				<div class="footer__block">
-					<button class="button button-white" id="order-call-footer">Get in touch</button>
+					<button class="button button-white call" id="order-call-footer">Get in touch</button>
 					<div class="social">
 						<a class="social__icon social__icon-vk" href="https://vk.com/id511972611"></a>
 						<a class="social__icon social__icon-tg" href="https://t.me/sergeiklinov" ></a>
@@ -122,12 +122,13 @@
 				© made from scratch by Sergei Klinov, 2019
 			</div>
 		</div>
+
 		<div class="modal" id="modal-call">
 			<div class="modal-container">
 				<i class="material-icons material-icons-white modal__clear" id="modal__clear">
 					clear
 				</i>
-				<h3 class="h3 h3-modal">Get it touch</h3>
+				<h3 class="h3 h3-modal" id="modal-call-h3">Get it touch</h3>
 				<form class="modal__form">
 					<label for="name" class="modal__label">My name is:</label>
 					<input type="text" id="name" class="modal__field" placeholder="My name" required="required">
@@ -139,6 +140,18 @@
 				</form>
 				</div>
 		</div>
+
+		<div class="modal" id="modal-already">
+				<div class="modal-container">
+						<i class="material-icons material-icons-white modal__clear" id="modal__clear">
+							clear
+						</i>
+						<h3 class="h3 h3-modal">Your message already received. Thank you!</h3>
+					
+					</div>
+			</div>
+
+
 	<script src="lib/jquery-3.3.1.min.js"></script>
 	<script src="lib/jquery.maskedinput.js"></script>
 	<script src="lib/popper.min.js"></script>
